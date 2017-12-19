@@ -1,0 +1,27 @@
+"0","#### Get the face detection data from google
+for (i in seq(length(img))) {
+  image_name <- paste(""../ExplicitImages/gif"", i, "".jpeg"", sep = """")
+  
+  image_write(img[i], path = image_name, format = ""jpeg"")
+  
+  PicVisionStatsFace = getGoogleVisionResponse(image_name, feature = 'FACE_DETECTION', numResults = 40)
+  
+  ## Generating boundry for the face
+  xs1 <- PicVisionStatsFace$fdBoundingPoly$vertices[[1]][1][[1]]
+  ys1 <- PicVisionStatsFace$fdBoundingPoly$vertices[[1]][2][[1]]
+  
+  ## Generating landmarks like nose, eye brows
+  xs2 = PicVisionStatsFace$landmarks[[1]][[2]][[1]]
+  ys2 = PicVisionStatsFace$landmarks[[1]][[2]][[2]]
+  #
+  #
+  list.all[[i]] <- list(xs1, ys1, xs2, ys2)
+}
+"
+"2","2017-12-17 18:05:37> No authorization yet in this session!
+"
+"2","2017-12-17 18:05:37> NOTE: a  .httr-oauth  file exists in current working directory.
+ Run authentication function to use the credentials cached for this session.
+"
+"2","Error: Invalid token
+"

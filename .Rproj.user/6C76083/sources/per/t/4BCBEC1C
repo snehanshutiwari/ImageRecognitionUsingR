@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1510618704649.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1214509651",
+    "id" : "4BCBEC1C",
+    "lastKnownWriteTime" : 1513563424,
+    "last_content_update" : 1513563424348,
+    "path" : "C:/Users/sneha/Desktop/git/ImageRecognitionUsingR/code/ImageRecognition.R",
+    "project_path" : "code/ImageRecognition.R",
+    "properties" : {
+        "cursorPosition" : "100,0",
+        "scrollLine" : "90",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

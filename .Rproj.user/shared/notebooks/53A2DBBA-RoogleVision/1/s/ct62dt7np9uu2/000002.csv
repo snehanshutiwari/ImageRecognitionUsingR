@@ -1,0 +1,4 @@
+"0","frames <- image_morph(list.all.image_c, frames = 0.0025)"
+"2","Error in inherits(image, ""magick-image"") : 
+  object 'list.all.image_c' not found
+"
